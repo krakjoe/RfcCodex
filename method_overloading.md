@@ -61,7 +61,7 @@ class Foo {
     }
 }
 
-class FooBar {
+class Bar extends Foo {
     function sum(float $a, float $b): float
     {
         echo "float version was called\n";
@@ -69,7 +69,7 @@ class FooBar {
     }
 }
 
-$foobar = new FooBar();
+$foobar = new Bar();
 $foobar->sum($x1, $x2);
 ```
 
